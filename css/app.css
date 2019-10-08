@@ -43,6 +43,9 @@ P { text-align: center;
     color: white ;
 
 }
+#a {
+	text-align: left;
+}
 
 body { 
     line-height: 1;

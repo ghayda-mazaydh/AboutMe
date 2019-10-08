@@ -1,71 +1,104 @@
 'use strict';
-
+var yourscore = 0;
 var name = prompt('what is your name?');
-alert('hello '+ name + '  , let\'s get started');
+alert('hello ' + name + '  , let\'s get started');
 console.log('welcome', name);
 
-var Q1 = prompt('am i from Tafila');
+var Q = [
+    ['am i from Tafila',
+        'it is great to be from there',
+        'unfortunalety'
+    ], ['do i love running??',
+        'i do every morning',
+        'ooh, it is very important'
+    ], ['am i commited to time??',
+        'great',
+        'you have to ..'
+    ], ['am i patient ?',
+        'actually i am ',
+        'no, i am'
+    ], ['do i love food??',
+        'everyone loves food',
+        'unfortunalety']
+]
 
-Q1 = Q1.toLowerCase();
-switch (Q1) {
-    case 'yes':
-    case 'y':
-        alert('correct');
-        break;
-    default:
-        alert('not right!');
+for (var i = 0; i < 5; i++) {
+    var currentQ = Q[i];
+    var currentP = currentQ[0];
+    var userResponse = prompt(currentP);
+    userResponse = userResponse.toLowerCase();
+    var positiveReply = currentQ[1];
+    var negativeReply = currentQ[2];
 
-}
 
-var Q2 = prompt('do i love running??');
-
-Q2 = Q2.toLowerCase();
-if (Q2 == 'yes') {
-    alert('correct');
-
-} else if (Q2 == 'y') {
-    alert('correct');
-
-} else {
-    alert('not right!');
-}
-
-var Q3 = prompt('do i love pets??');
-
-Q3 = Q3.toLowerCase();
-if (Q3 == 'no') {
-    alert('correct');
-
-} else if (Q3 == 'n') {
-    alert('correct');
-
-} else {
-    alert('not right');
-
-}
-var Q4 = prompt('am i afraid of the dark');
-
-Q4 = Q4.toLowerCase();
-switch (Q4) {
-    case 'no':
-    case 'n':
-        alert('correct');
-        break;
-    default:
-        alert('not right!');
+    switch (userResponse) {
+        case 'yes':
+        case 'y':
+            yourscore++
+            alert(positiveReply);
+            break;
+        case 'no':
+        case 'n':
+            alert(negativeReply);
+            break;
+        default:
+            alert('not right');
+    }
 
 }
-var Q5 = prompt('am i 25??');
 
-Q5 = Q5.toLowerCase();
-switch (Q5) {
-    case 'yes':
-    case 'y':
-        alert('correct');
-        break;
-    default:
-        alert('not right!');
+////////////////////////////////// QUESTION NUMBER 6 /////////////////////////////////////
+for (var j = 0; j < 4; j++) {
+    var age = prompt('guess how old i am?? enter a number with two digits');
+
+    if (age == 25) {
+        alert('that is true');
+        yourscore++
+        var j = 4;
+    }
+    else if (age > 28) {
+        alert('too high');
+
+    } else if (age < 22) {
+        alert('too small');
+
+    }
 }
+alert('my age is 25');
 
+///////////////////////////////////// QUESTION NUMBER 7 /////////////////////////////////
+
+var colors = ['white', 'burgandy', 'olive green'];
+
+for (var k = 0; k < 6; k++) {
+    var color = prompt('can you mention one of my favourite colors');
+    color = color.toLowerCase();
+
+    if (color == colors[0] || color == colors[1] || color == colors[2]) {
+        alert('this is right');
+        k=6;
+        yourscore++
+
+    }
+    else { alert('try again'); }
+}
+alert('my favourite colors are: white, burgandy and olive green');
+
+
+///////////////////////////////////// ANSWERS COUNTR /////////////////////////////////
+
+alert('your score are   ' + yourscore);
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
