@@ -3,6 +3,7 @@ var yourscore = 0;
 var name = prompt('what is your name?');
 alert('hello ' + name + '  , let\'s get started');
 console.log('welcome', name);
+function ghayda (){
 
 var Q = [
     ['am i from Tafila',
@@ -44,10 +45,11 @@ for (var i = 0; i < 5; i++) {
         default:
             alert('not right');
     }
-
-}
-
+return (Q);
+}}
+ghayda();
 ////////////////////////////////// QUESTION NUMBER 6 /////////////////////////////////////
+function myage(){
 for (var j = 0; j < 4; j++) {
     var age = prompt('guess how old i am?? enter a number with two digits');
 
@@ -66,8 +68,11 @@ for (var j = 0; j < 4; j++) {
 }
 alert('my age is 25');
 
+return (age)
+}
+myage();
 ///////////////////////////////////// QUESTION NUMBER 7 /////////////////////////////////
-
+function mycolor (){
 var colors = ['white', 'burgandy', 'olive green'];
 
 for (var k = 0; k < 6; k++) {
@@ -89,9 +94,9 @@ alert('my favourite colors are: white, burgandy and olive green');
 
 alert('your score are   ' + yourscore);
 
-
-
-
+return(color);
+}
+mycolor();
 
 
 
