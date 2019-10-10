@@ -44,9 +44,9 @@ for (var i = 0; i < 5; i++) {
             break;
         default:
             alert('not right');
-    }
+    }}
 return (Q);
-}}
+}
 ghayda();
 ////////////////////////////////// QUESTION NUMBER 6 /////////////////////////////////////
 function myage(){
