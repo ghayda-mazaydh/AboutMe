@@ -47,6 +47,7 @@ for (var i = 0; i < 5; i++) {
 return (Q);
 }
 ghayda();
+
 ////////////////////////////////// QUESTION NUMBER 6 /////////////////////////////////////
 function myage(){
 for (var j = 0; j < 4; j++) {
