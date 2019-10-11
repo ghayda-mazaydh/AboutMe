@@ -31,7 +31,6 @@ for (var i = 0; i < 5; i++) {
     var positiveReply = currentQ[1];
     var negativeReply = currentQ[2];
 
-
     switch (userResponse) {
         case 'yes':
         case 'y':
